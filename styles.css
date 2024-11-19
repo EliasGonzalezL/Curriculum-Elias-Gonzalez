@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #e6f7ff; /* Azul cielo claro */
+    color: #333; /* Cambiar el color de las letras a gris oscuro */
+}
+
+.container {
+    width: 800px;
+    padding: 20px;
+    background-color: #d9f0ff; /* Fondo azul más suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 28px; /* Aumentar tamaño */
+    margin: 0;
+    color: #1b3b54; /* Color azul oscuro */
+}
+
+.header h2 {
+    font-size: 20px; /* Aumentar tamaño */
+    color: #555; /* Gris más suave */
+    margin: 0;
+}
+
+.content {
+    display: flex;
+}
+
+.left-column, .right-column {
+    padding: 10px;
+}
+
+.left-column {
+    width: 30%;
+}
+
+.right-column {
+    width: 70%;
+}
+
+.section h3 {
+    font-size: 18px; /* Aumentar tamaño */
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #1b3b54; /* Azul oscuro */
+}
+
+.section p {
+    margin: 5px 0;
+    font-size: 16px; /* Aumentar tamaño */
+}
+
+img {
+    border: 3px solid #1b3b54; /* Recuadro alrededor de la foto */
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px; /* Ajuste de tamaño */
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #3e8eac; /* Azul medio */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #336e8d; /* Oscurecer el botón al pasar el cursor */
+}

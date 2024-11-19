@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e6f7ff; /* Azul cielo claro */
+  color: #333; /* Texto gris oscuro */
+}
+
+.form-icon {
+  background-color: #d9f0ff; /* Fondo azul claro */
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.form-icon img {
+  width: 60px;
+  border: 2px solid #1b3b54; /* Recuadro decorativo */
+  border-radius: 50%;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #d9f0ff; /* Fondo azul claro */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px; /* Aumentar padding */
+  margin: 10px 0; /* Separación más amplia */
+  border: 1px solid #ccc; /* Borde más visible */
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 16px; /* Aumentar tamaño */
+}
+
+.form-row input {
+  width: 48%;
+}
+
+button {
+  padding: 12px; /* Botones más grandes */
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3e8eac;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #336e8d;
+}
