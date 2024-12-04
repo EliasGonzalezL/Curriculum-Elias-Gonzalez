@@ -1,15 +1,15 @@
+/* Estilos Generales */
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
     margin: 0;
     padding: 20px;
     background-color: #e6f7ff; /* Azul cielo claro */
-    color: #333; /* Cambiar el color de las letras a gris oscuro */
+    color: #333; /* Color de texto gris oscuro */
 }
 
 .container {
-    width: 800px;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
     background-color: #d9f0ff; /* Fondo azul más suave */
     border-radius: 10px; /* Bordes redondeados */
@@ -22,19 +22,31 @@ body {
 }
 
 .header h1 {
-    font-size: 28px; /* Aumentar tamaño */
+    font-size: 2em; /* Tamaño relativo */
     margin: 0;
     color: #1b3b54; /* Color azul oscuro */
 }
 
 .header h2 {
-    font-size: 20px; /* Aumentar tamaño */
+    font-size: 1.5em; /* Tamaño relativo */
     color: #555; /* Gris más suave */
-    margin: 0;
+    margin: 10px 0 0;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #1b3b54; /* Recuadro alrededor de la foto */
+    border-radius: 50%; /* Bordes redondeados */
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
 }
 
 .content {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .left-column, .right-column {
@@ -42,15 +54,15 @@ body {
 }
 
 .left-column {
-    width: 30%;
+    flex: 1 1 250px;
 }
 
 .right-column {
-    width: 70%;
+    flex: 2 1 500px;
 }
 
 .section h3 {
-    font-size: 18px; /* Aumentar tamaño */
+    font-size: 1.2em; /* Tamaño relativo */
     margin: 10px 0 5px;
     font-weight: bold;
     color: #1b3b54; /* Azul oscuro */
@@ -58,31 +70,77 @@ body {
 
 .section p {
     margin: 5px 0;
-    font-size: 16px; /* Aumentar tamaño */
+    font-size: 1em; /* Tamaño relativo */
 }
 
-img {
-    border: 3px solid #1b3b54; /* Recuadro alrededor de la foto */
-    border-radius: 10px; /* Bordes ligeramente redondeados */
-    margin-top: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
-}
-
-button a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px; /* Ajuste de tamaño */
-}
-
-button {
-    padding: 10px;
+button.contact-button {
+    padding: 10px 15px;
     margin-top: 10px;
     background-color: #3e8eac; /* Azul medio */
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
+button.contact-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em; /* Tamaño relativo */
+}
+
+button.contact-button:hover {
     background-color: #336e8d; /* Oscurecer el botón al pasar el cursor */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    
+    .left-column, .right-column {
+        flex: 1 1 100%;
+    }
+    
+    .header h1 {
+        font-size: 1.8em;
+    }
+    
+    .header h2 {
+        font-size: 1.3em;
+    }
+    
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    .header h1 {
+        font-size: 1.5em;
+    }
+    
+    .header h2 {
+        font-size: 1.1em;
+    }
+    
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    button.contact-button {
+        width: 100%;
+        text-align: center;
+    }
 }
